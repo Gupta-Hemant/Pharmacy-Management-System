@@ -761,11 +761,8 @@ class PharmacyManagementSystem:
                 # Once you've set the scanned data to the reference number, you may want to exit the loop
                     break
 
-        # Wait for 'q' key to quit
                 if cv2.waitKey(1) & 0xFF == ord('q'):
                     break
-
-    # Release the camera and close OpenCV windows
                 cap.release()
                 cv2.destroyAllWindows()
 
